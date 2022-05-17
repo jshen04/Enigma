@@ -1,0 +1,5 @@
+Justin + Jeremy 5/17/2022 3:00
+- Worked on figuring out our plan and recognizing how rotors work with reflectors
+
+Justin 5/17/2022 7:30
+- worked on implementation of rotors with no reflectors
