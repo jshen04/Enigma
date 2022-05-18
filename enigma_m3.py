@@ -34,11 +34,15 @@ class EnimgaM3:
             else:
                 ans = ans + c
         return ans
+    
 
-r1 = Rotor('A', 'Q', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ')
+    def plug():
+        return
+
+r1 = Rotor('A', 'V', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ')
 r2 = Rotor('A', 'E', 'AJDKSIRUXBLHWTMCQGZNPYFVOE')
-r3 = Rotor('A', 'V', 'BDFHJLCPRTXVZNYEIWGAKMUSQO')
+r3 = Rotor('A', 'Q', 'BDFHJLCPRTXVZNYEIWGAKMUSQO')
 reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL')
 
 e1 = EnimgaM3(reflector, r3, r2, r1)
-print(e1.forward('ABC'))
+print(e1.forward('JeremyisToosmart'))
