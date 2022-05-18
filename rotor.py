@@ -3,6 +3,7 @@ import string
 class Rotor:
     def __init__(self, start_key: str, rotor_config: str):
         self.rotor_wiring = ''.join(rotor_config.split())
+        self.trigger = self.rotor_wiring[0]
 
         for _ in range(string.ascii_uppercase.index(start_key.upper())):
             self.rotate()
