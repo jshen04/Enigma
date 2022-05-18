@@ -1,7 +1,7 @@
-Justin + Jeremy 5/17/2022 3:00
+Justin + Jeremy 5/17/2022 15:00
 - Worked on figuring out our plan and recognizing how rotors work with reflectors
 
-Justin 5/17/2022 7:30
+Justin 5/17/2022 19:30
 - worked on implementation of rotors with no reflectors
 
 Jeremy 5/18/2022 00:30
@@ -9,3 +9,6 @@ Jeremy 5/18/2022 00:30
 
 Jeremy 5/18/2022 9:00
 - started Enigma I machine; currently encoding errors
+
+Jeremy 5/18/2022 19:00
+- changed to Enigma M3 machine, completed?
