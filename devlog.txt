@@ -6,3 +6,6 @@ Justin 5/17/2022 7:30
 
 Jeremy 5/18/2022 00:30
 - created class for rotors with forward, backward, and rotating mechanism
+
+Jeremy 5/18/2022 9:00
+- started Enigma I machine; currently encoding errors
