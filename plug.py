@@ -6,7 +6,19 @@ class BijectiveMap:
         self.input1 = input1
         self.input2 = input2
 
-    def link(self):
+    def link(self,s):
+        alphabet = list(string.ascii_lowercase)
+        newOutput = ""
         dict = {}
-        dict[self.input1] = self.input2
+        for i in range(26):
+           dict[alphabet[i]] = alphabet[i]
+        dict[self.input1.lower()] = self.input2.lower()
+        for k in s:
+            newvalue = dict[k.lower()]
+            newOutput += newvalue
+        return newOutput
+
+
+
+
         

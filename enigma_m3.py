@@ -1,11 +1,13 @@
+from plug import BijectiveMap
 from rotor import Rotor
 
 class EnimgaM3:
-    def __init__(self, reflector, rotor1, rotor2, rotor3):
+    def __init__(self, reflector, rotor1, rotor2, rotor3, plugs):
         self.rotor1 = rotor1
         self.rotor2 = rotor2
         self.rotor3 = rotor3
         self.reflector = reflector
+        self.plugs = plugs
 
     def rotate(self):
         self.rotor1.rotate()
@@ -16,7 +18,8 @@ class EnimgaM3:
 
     def forward(self, s):
         ans = ""
-        for c in s:
+        newS = self.plugs.link(s)
+        for c in newS:
             if c.isalpha():
                 self.rotate()
                 x = self.rotor1.forward(c)
@@ -36,13 +39,11 @@ class EnimgaM3:
         return ans
     
 
-    def plug():
-        return
-
+b2 = BijectiveMap('A','Z')
 r1 = Rotor('A', 'V', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ')
 r2 = Rotor('A', 'E', 'AJDKSIRUXBLHWTMCQGZNPYFVOE')
 r3 = Rotor('A', 'Q', 'BDFHJLCPRTXVZNYEIWGAKMUSQO')
 reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL')
 
-e1 = EnimgaM3(reflector, r3, r2, r1)
-print(e1.forward('JeremyisToosmart'))
+e1 = EnimgaM3(reflector, r3, r2, r1,b2)
+print(e1.forward('ABC'))
