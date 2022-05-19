@@ -39,7 +39,7 @@ class EnimgaM3:
         return ans
     
 
-b2 = BijectiveMap('A','Z')
+b2 = BijectiveMap('AB','ZC')
 r1 = Rotor('A', 'V', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ')
 r2 = Rotor('A', 'E', 'AJDKSIRUXBLHWTMCQGZNPYFVOE')
 r3 = Rotor('A', 'Q', 'BDFHJLCPRTXVZNYEIWGAKMUSQO')

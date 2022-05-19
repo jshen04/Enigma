@@ -1,3 +1,4 @@
+from array import array
 import string
 
 class BijectiveMap:
@@ -12,8 +13,10 @@ class BijectiveMap:
         dict = {}
         for i in range(26):
            dict[alphabet[i]] = alphabet[i]
-        dict[self.input1.lower()] = self.input2.lower()
-        dict[self.input2.lower()] = self.input1.lower()
+        for i in range(len(self.input1)):
+            dict[self.input1[i].lower()] = self.input2[i].lower()
+        for i in range(len(self.input1)):   
+            dict[self.input2[i].lower()] = self.input1[i].lower()
         for k in s:
             newvalue = dict[k.lower()]
             newOutput += newvalue
