@@ -13,6 +13,7 @@ class BijectiveMap:
         for i in range(26):
            dict[alphabet[i]] = alphabet[i]
         dict[self.input1.lower()] = self.input2.lower()
+        dict[self.input2.lower()] = self.input1.lower()
         for k in s:
             newvalue = dict[k.lower()]
             newOutput += newvalue
