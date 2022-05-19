@@ -12,3 +12,6 @@ Jeremy 5/18/2022 9:00
 
 Jeremy 5/18/2022 19:00
 - changed to Enigma M3 machine, completed?
+
+Justin 5/18/2022 20:00
+- finished most of the plugboard
