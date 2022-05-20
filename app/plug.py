@@ -19,6 +19,7 @@ class BijectiveMap:
             dict[self.input2[i].lower()] = self.input1[i].lower()
         for k in s:
             newvalue = dict[k.lower()]
+            print(newvalue)
             newOutput += newvalue
         return newOutput
 

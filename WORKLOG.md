@@ -21,3 +21,6 @@ Justin 5/18/2022 20:00
 Justin 5/19 15:04
 - reworked the directories
 - tried working on plug for multiple plugs
+
+Justin 5/19 21:31
+- tried fixing plugs wiht debugging but doesnt work yet
