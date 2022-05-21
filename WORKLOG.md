@@ -1,3 +1,5 @@
+# WORKLOGS BY JEREMY AND JUSTIN
+
 Justin + Jeremy 5/17/2022 15:00
 - Worked on figuring out our plan and recognizing how rotors work with reflectors
 
