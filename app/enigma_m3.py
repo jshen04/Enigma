@@ -33,11 +33,10 @@ class EnimgaM3:
                 x = self.rotor2.backward(self.rotor2.ring_position[n])
                 n = self.rotor2.ring_position.index(x)
                 x = self.rotor1.backward(self.rotor1.ring_position[n])
-                print(x + " x")
                 ans = ans + x
             else:
                 ans = ans + c
-        return ans
+        return self.plugs.link(ans)
     
 
 b2 = BijectiveMap('AB','ZC')
@@ -47,4 +46,4 @@ r3 = Rotor('A', 'Q', 'BDFHJLCPRTXVZNYEIWGAKMUSQO')
 reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL')
 
 e1 = EnimgaM3(reflector, r3, r2, r1,b2)
-print(e1.forward('HellobApple'))
+print(e1.forward('ABC'))

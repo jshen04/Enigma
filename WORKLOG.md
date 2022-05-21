@@ -24,3 +24,6 @@ Justin 5/19 15:04
 
 Justin 5/19 21:31
 - tried fixing plugs wiht debugging but doesnt work yet
+
+Justin 5/21 18:27
+- fixed the plugs by realizing you have to change it twice
