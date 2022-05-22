@@ -1,10 +1,20 @@
+from collections import Counter
 import string
 
 class Rotor:
     def __init__(self, ring_setting: str, notch: str, rotor_config: str):
-        self.rotor_wiring = ''.join(rotor_config.split())
+        self.rotor_wiring = ''.join(rotor_config.upper().split())
         self.ring_position = string.ascii_uppercase
-        self.trigger = notch
+        self.trigger = notch.upper()
+
+        if len(ring_setting) != 1 or not ring_setting.isalpha():
+            raise ValueError("ring setting must be one letter")
+
+        if len(notch) != 1 or not notch.isalpha():
+            raise ValueError("notch must be one letter")
+
+        if len(self.rotor_wiring) != 26 or len(Counter(self.rotor_wiring)) != 26:
+            raise ValueError("rotor must use very letter in the alphabet exactly once")
 
         for _ in range(string.ascii_uppercase.index(ring_setting.upper())):
             self.shift()
