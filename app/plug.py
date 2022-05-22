@@ -1,9 +1,14 @@
-from array import array
+from collections import Counter
 import string
 
 class Plug:
-
     def __init__(self, input1: str, input2: str):
+        if len(input1) != len(input2):
+            raise Exception("input1 and input2 must have same length")
+
+        if len(Counter(input1 + input2)) != len(input1 + input2):
+            raise Exception("input1 and input2 must have unique and different letters")
+
         self.input1 = input1
         self.input2 = input2
         self.mapping = {}
@@ -20,8 +25,3 @@ class Plug:
             c = self.mapping[c.upper()]
             ans += c
         return ans
-
-
-
-
-        
