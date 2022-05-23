@@ -2,13 +2,16 @@ from collections import Counter
 import string
 
 class Rotor:
-    def __init__(self, ring_setting: str, notch: str, rotor_config: str):
+    def __init__(self, ring_setting: str, position: str, rotor_config: str, notch: str):
         self.rotor_wiring = ''.join(rotor_config.upper().split())
         self.ring_position = string.ascii_uppercase
         self.trigger = notch.upper()
 
         if len(ring_setting) != 1 or not ring_setting.isalpha():
             raise ValueError("ring setting must be one letter")
+
+        if len(position) != 1 or not position.isalpha():
+            raise ValueError("start position must be one letter")
 
         if len(notch) != 1 or not notch.isalpha():
             raise ValueError("notch must be one letter")
@@ -18,6 +21,10 @@ class Rotor:
 
         for _ in range(string.ascii_uppercase.index(ring_setting.upper())):
             self.shift()
+            self.rotor_wiring = self.rotor_wiring[-1] + self.rotor_wiring[:-1]
+
+        for _ in range(string.ascii_uppercase.index(position.upper())):
+            self.rotate()
 
     def rotate(self):
         self.rotor_wiring = self.rotor_wiring[1:] + self.rotor_wiring[0]
