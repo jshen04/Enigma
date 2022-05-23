@@ -29,3 +29,6 @@ Justin 5/19 21:31
 
 Justin 5/21 18:27
 - fixed the plugs by realizing you have to change it twice
+
+Jeremy 5/22 9:20
+- created exceptions for bad inputs and fixed ring setting
