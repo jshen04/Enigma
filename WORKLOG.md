@@ -33,5 +33,8 @@ Justin 5/21 18:27
 Jeremy 5/22 9:20
 - created exceptions for bad inputs and fixed ring setting
 
-Jeremy 5/22 9:20
+Jeremy 5/22 15:00
 - created abstract enigma class
+
+Justin + Jeremy 5/23 15:29
+- worked together on trying to figure out positioning of rotors 
