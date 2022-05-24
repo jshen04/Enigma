@@ -38,3 +38,6 @@ Jeremy 5/22 15:00
 
 Justin + Jeremy 5/23 15:29
 - worked together on trying to figure out positioning of rotors 
+
+Justin 5/24 15:33
+Worked on presentation.md as well as resources.md
