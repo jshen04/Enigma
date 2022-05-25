@@ -41,3 +41,7 @@ Justin + Jeremy 5/23 15:29
 
 Justin 5/24 15:33
 Worked on presentation.md as well as resources.md
+
+Justin + Jeremy 5/24 17:22 20:34
+Added in Input and updated README
+Got in a call and tried our best to fix rotors for an hour and nothing happened!
