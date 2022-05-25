@@ -12,6 +12,7 @@ print(r1.rotor_wiring, r1.ring_position)
 print(r2.rotor_wiring, r2.ring_position)
 print(r3.rotor_wiring, r3.ring_position)
 
+print(e1.forward("A"))
 print(e1.forward("ABC"))
 
 
