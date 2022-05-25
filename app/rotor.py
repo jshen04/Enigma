@@ -1,6 +1,7 @@
 from collections import Counter
 import string
 
+
 class Rotor:
     def __init__(self, ring_setting: str, position: str, rotor_config: str, notch: str):
         self.rotor_wiring = ''.join(rotor_config.upper().split())
@@ -35,11 +36,7 @@ class Rotor:
             self.rotor_wiring =  self.rotor_wiring[0:i] + chr(((ord(c) + 1) - 65 ) % 26 + 65) + self.rotor_wiring[i+1:]
 
     def forward(self, c):
-        return self.rotor_wiring[self.ring_position.index(c.upper())]
+        return self.rotor_wiring[string.ascii_uppercase.index(c.upper())]
 
     def backward(self, c):
-        return self.ring_position[self.rotor_wiring.index(c.upper())]
-
-r2 = Rotor('B', 'C', 'BDFHJLCPRTXVZNYEIWGAKMUSQO', 'Q')
-print(r2.ring_position, r2.rotor_wiring)
-print(r2.forward("Y"))
+        return string.ascii_uppercase[self.rotor_wiring.index(c.upper())]
