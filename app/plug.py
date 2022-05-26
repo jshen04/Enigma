@@ -2,7 +2,7 @@ from collections import Counter
 import string
 
 class Plug:
-    def __init__(self, input1: str, input2: str):
+    def __init__(self, input1, input2):
         if len(input1) != len(input2):
             raise Exception("input1 and input2 must have same length")
 

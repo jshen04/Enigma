@@ -1,6 +1,6 @@
 import string
 
-from enigma import Enigma
+
 from plug import Plug
 from rotor import Rotor
 
@@ -66,10 +66,10 @@ class EnimgaM3:
         return self.plugs.link(ans)
 
 p = Plug('', '')
-r1 = Rotor('A', 'A', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ', 'Q')
+r1 = Rotor('A', 'B', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ', 'Q')
 r2 = Rotor('A', 'A', 'AJDKSIRUXBLHWTMCQGZNPYFVOE', 'E')
 r3 = Rotor('A', 'A', 'BDFHJLCPRTXVZNYEIWGAKMUSQO', 'V')
 reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL', 'A')
 
-e1 = EnimgaM3(reflector, r3, r2, r1, p)
-print(e1.forward('ABC'))
+e1 = EnimgaM3(reflector, r1, r2, r3, p)
+print(e1.forward("ABC"))

@@ -3,7 +3,7 @@ import string
 
 
 class Rotor:
-    def __init__(self, ring_setting: str, position: str, rotor_config: str, notch: str):
+    def __init__(self, ring_setting, position, rotor_config, notch):
         self.rotor_wiring = ''.join(rotor_config.upper().split())
         self.ring_position = string.ascii_uppercase
         self.trigger = notch.upper()

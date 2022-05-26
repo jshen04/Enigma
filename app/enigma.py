@@ -5,7 +5,7 @@ from rotor import Rotor
 import string
 
 class Enigma:
-    def __init__(self, reflector: Rotor, rotors: list, plugs: Plug):
+    def __init__(self, reflector, rotors: list, plugs):
         self.reflector = reflector
         self.rotors = rotors
         self.plug = plugs
