@@ -49,3 +49,6 @@ HELP HELP HEEEELLLLLLPPPPPPPPPPP
 
 Justin 5/25 15:35 
 Traced through the different outputs, found a potential solution in class by forwarding our own rotors x amount of times
+
+Jeremy 5/25 23:53
+Finished enima m3 ring settings and positions - we are done!
