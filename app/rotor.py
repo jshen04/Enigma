@@ -36,7 +36,7 @@ class Rotor:
             self.rotor_wiring =  self.rotor_wiring[0:i] + chr(((ord(c) + 1) - 65 ) % 26 + 65) + self.rotor_wiring[i+1:]
 
     def forward(self, c):
-        return self.rotor_wiring[string.ascii_uppercase.index(c.upper())]
+        return self.rotor_wiring[self.ring_position.index(c.upper())]
 
     def backward(self, c):
-        return string.ascii_uppercase[self.rotor_wiring.index(c.upper())]
+        return self.ring_position[self.rotor_wiring.index(c.upper())]

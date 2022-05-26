@@ -51,10 +51,10 @@ class Enigma:
                 # c = chr(ord(c) + 1)
                 c = self.rotors[0].forward(c)
                 print(c + " line 52")
-                n = self.rotors[0].ring_position.index(c)
+                n = self.rotors[0].rotor_wiring.index(c)
                 for rotor in self.rotors[1:]:
                     c = rotor.forward(rotor.ring_position[n])
-                    n = rotor.ring_position.index(c)
+                    n = rotor.rotor_wiring.index(c)
                     print(c + " line 57")
                 c = self.reflector.forward(c)
                 print(c + " line 59")
@@ -62,9 +62,10 @@ class Enigma:
                 print(c + " line 61")
                 n = self.rotors[-1].ring_position.index(c)
                 for rotor in reversed(self.rotors[:-1]):
-                    c = rotor.backward(rotor.ring_position[n])
+                    c = rotor.backward(rotor.rotor_wiring[n])
                     print(c + " line 65")
                     n = rotor.ring_position.index(c)
+                c = string.ascii_uppercase[n]
                 ans = ans + c
             else:
                 ans = ans + c
