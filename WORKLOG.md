@@ -52,3 +52,6 @@ Traced through the different outputs, found a potential solution in class by for
 
 Jeremy 5/25 23:53
 Finished enima m3 ring settings and positions - we are done!
+
+Justin 5/25 15:29
+Fixed some errors that I found when testing on lab computer
