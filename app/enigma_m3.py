@@ -72,4 +72,4 @@ r3 = Rotor('A', 'A', 'BDFHJLCPRTXVZNYEIWGAKMUSQO', 'V')
 reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL', 'A')
 
 e1 = EnimgaM3(reflector, r1, r2, r3, p)
-print(e1.forward("ABC"))
+print(e1.forward(input("Enter a string:")))
