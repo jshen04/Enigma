@@ -23,6 +23,8 @@ Lets say you have the following as your rotor defaults:
 
 And you select the letter A, you see that A goes on to D looking at the first rotor, then you plug D into the second rotor which returns G, and then you plug G into the third rotor to get Z. 
 
+### Reflectors 
+Reflectors are essentially rotors that have an extra step of reflecting the output through the rotors. To put this in better terms, after we get from A to Z after passing through the three rotors at the beginning, You would then input Z into the reflector. Get an output of lets say B and then input B back through the rotors to get back the final output.
 
 
 
