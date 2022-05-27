@@ -55,3 +55,6 @@ Finished enima m3 ring settings and positions - we are done!
 
 Justin 5/25 15:29
 Fixed some errors that I found when testing on lab computer
+
+Jeremy :heart: Justin 5/26 
+:heart_eyes::heart_eyes::heart_eyes: Created good interface for setting up and passing messages in enigma
