@@ -1,5 +1,5 @@
 import string
-
+import sys
 
 from plug import Plug
 from rotor import Rotor
@@ -65,11 +65,49 @@ class EnimgaM3:
                 ans = ans + c
         return self.plugs.link(ans)
 
-p = Plug('', '')
-r1 = Rotor('A', 'B', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ', 'Q')
-r2 = Rotor('A', 'A', 'AJDKSIRUXBLHWTMCQGZNPYFVOE', 'E')
-r3 = Rotor('A', 'A', 'BDFHJLCPRTXVZNYEIWGAKMUSQO', 'V')
-reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL', 'A')
+r1 = ('EKMFLGDQVZNTOWYHXUSPAIBRCJ', 'Q')
+r2 = ('AJDKSIRUXBLHWTMCQGZNPYFVOE', 'E')
+r3 = ('BDFHJLCPRTXVZNYEIWGAKMUSQO', 'V')
+r4 = ('ESOVPZJAYQUIRHXLNFTGKDCMWB', 'J')
+r5 = ('VZBRGITYUPSDNHLXAWMJQOFECK', 'Z')
+rotors = [r1, r2, r3, r4, r5]
 
-e1 = EnimgaM3(reflector, r1, r2, r3, p)
-print(e1.forward("ABC"))
+reflectorA = 'EJMZALYXVBWFCRQUONTSPIKHGD'
+reflectorB = 'YRUHQSLDPXNGOKMIEBFZCWVJAT'
+reflectorC = 'FVPJIAOYEDRZXWGCTKUQSBNMHL'
+
+reflectors = [reflectorA, reflectorB, reflectorC]
+
+rotor1 = rotors[int(sys.argv[1]) - 1]
+rs1 = sys.argv[2]
+pos1 = sys.argv[3]
+
+rotor2 = rotors[int(sys.argv[4]) - 1]
+rs2 = sys.argv[5]
+pos2 = sys.argv[6]
+
+rotor3 = rotors[int(sys.argv[7]) - 1]
+rs3 = sys.argv[8]
+pos3 = sys.argv[9]
+
+reflector = reflectors[ord(sys.argv[10].upper()) - 65]
+
+plugs = sys.argv[11:]
+input_plug = ""
+output_plug = ""
+for pair in plugs:
+    input_plug = input_plug + pair[0]
+    output_plug = output_plug + pair[1]
+
+r1 = Rotor(rs1, pos1, rotor1[0], rotor1[1])
+r2 = Rotor(rs2, pos2, rotor2[0], rotor2[1])
+r3 = Rotor(rs3, pos3, rotor3[0], rotor3[1])
+reflector = Rotor('A', 'A', reflector, 'A')
+p = Plug(input_plug, output_plug)
+
+machine = EnimgaM3(reflector, r1, r2, r3, p)
+
+for line in sys.stdin:
+    if 'q' == line.rstrip():
+        break
+    print(machine.forward(''.join(line.upper().split())))
