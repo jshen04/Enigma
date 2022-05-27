@@ -111,3 +111,4 @@ for line in sys.stdin:
     if 'q' == line.rstrip():
         break
     print(machine.forward(''.join(line.upper().split())))
+
