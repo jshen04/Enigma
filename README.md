@@ -1,9 +1,10 @@
-# Enigma
+# Enigma by Jeremy Shen and Justin Zou
 Stuyvesant High School Spring 2022 Cybersecurity Final Project
 
-This is our final project in Cybersecurity where we made an enigma machine encoder and decoder
+## Project Description
+This is our final project in Cybersecurity where we made an enigma machine encoder and decode. We built built all of the componenets of the machine up from scratch using just python. This includes the plugboard, rotors, reflectors and ring settings as well as inputs. To being look at the steps below.
 
-How to use it:
+## How to use it:
 1. Git clone our repository
 2. Cd into app
 3. python3 enigma_m3.py
