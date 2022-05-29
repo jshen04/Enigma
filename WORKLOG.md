@@ -60,7 +60,7 @@ Jeremy :heart: Justin 5/26
 :heart_eyes::heart_eyes::heart_eyes: Created good interface for setting up and passing messages in enigma
 
 Justin 5/27 15:30
-Worked on presentation slides and what we needed on them
+Worked on presentation slides and what we needed on them 😆:laughing::laughing:
 
 Jeremy 5/27 15:30
 Talked to Mr.K about what was happening and the different os issues
