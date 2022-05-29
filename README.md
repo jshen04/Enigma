@@ -15,3 +15,5 @@ An example of this would be ```python enigma_m3.py 1 A A 2 A A 3 A A C```
 
 Then you enter in the string you want encoded/decoded and the answer pops out
 
+### Homework and Presentation
+[Presentation](PRESENTATION.md)
