@@ -1,4 +1,4 @@
-# The Enigma Machine by Team J'lengima (Justin Zou and Jeremy Shen)
+# The Enigma Machine by Team J'lengima (Jeremy Shen and Justin Zou)
 
 ## What we did
 - Essentially we made an encoder and decoder with the enigma machine.
