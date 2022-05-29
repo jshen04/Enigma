@@ -33,6 +33,10 @@ Reflectors are essentially rotors that have an extra step of reflecting the outp
 Get an output of T and then input T back through the rotors to get back the final output of Q.
 
 ## Plugboard
+The plugboard is a simple 1 to 1 mapping of letters. For example, if you plug A and Z together, it means that every instance of A was replaced with Z. For example if A was linked to Z and we plugged in ABC into our enigma machine it would return NHR. This would be the exact same output if we plugged in ZBC without the plugboard link.
+
+## Ring Setting
+Ring setting is something that was not really covered in the videos we watched but essentially they are another layer of complexity. The default ring setting is 1 which means nothing is changed and goes up to 26. If the ring setting is 2, every letter in the rotor string goes up by one. So if B would go to C, C would go to D, etc. So a string ```ekmflgdqvzntowyhxuspaibrcj``` would go to ```flngmherwaoupxziyvtqbjcsdk```.
 
 
 
