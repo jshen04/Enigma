@@ -17,3 +17,5 @@ Then you enter in the string you want encoded/decoded and the answer pops out
 
 ### Homework and Presentation
 [Presentation](PRESENTATION.md)
+
+[Homework](HOMEWORK.md)
