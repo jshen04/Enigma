@@ -6,7 +6,7 @@ This is our final project in Cybersecurity where we made an enigma machine encod
 
 ## How to use it:
 1. Git clone our repository
-2. ```cd app``
+2. ```cd app```
 3. ```python3 enigma_m3.py```
 4. Input in your values
 * Now this might get confusing but essentially how you would use it would be 
@@ -16,7 +16,7 @@ An example of this would be ```python enigma_m3.py 1 A A 2 A A 3 A A C```
 
 Then you enter in the string you want encoded/decoded and the answer pops out
 
-### Homework and Presentation
+### Homework and Presentation files
 [Presentation](PRESENTATION.md)
 
 [Homework](HOMEWORK.md)
