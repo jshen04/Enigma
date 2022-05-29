@@ -65,6 +65,8 @@ Worked on presentation slides and what we needed on them
 Jeremy 5/27 15:30
 Talked to Mr.K about what was happening and the different os issues
 
+Justin 5/28 21:23
+Added in Resources and updates to presentation and ReadMe
 
 
 ### Resources Used
