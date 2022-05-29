@@ -69,9 +69,14 @@ Talked to Mr.K about what was happening and the different os issues
 
 ### Resources Used
 [Wikipedia Page for Rotors](https://en.wikipedia.org/wiki/Enigma_rotor_details)
+
 [Enigma simulator](https://piotte13.github.io/enigma-cipher/)
+
 [Another Enigma Emulator](https://dencode.com/en/cipher/enigma)
+
 [Ring Settings Conversation](https://crypto.stackexchange.com/questions/29315/how-does-the-ring-settings-of-enigma-change-wiring-tables)
+
 [Third Enigma Emulator](https://www.101computing.net/enigma-machine-emulator/)
+
 [Enigma Machine basic info](https://www.nms.ac.uk/explore-our-collections/stories/science-and-technology/enigma-encoding-machine/)
 
