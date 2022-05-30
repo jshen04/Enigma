@@ -7,11 +7,12 @@
 ## What is the Enigma Machine and some history
 - The first enigma machine was made in the 20th century by German engineer Arthur Scherbius in 1918, who sought to sell it for commercial, rather than military, purposes
 - Since then, many versions of the enigma machine have been made through the years, the most infamous of which is the German M3 which was used during WW2
-
+![Arthur Scherbius](https://github.com/jshen04/Enigma/blob/main/imgs/arthur.jpg)
 # So how did we make this encoder
 - The enigma machine is made up of many moving and complicated parts that would have made it nearly impossible to crack it so we made an encoder and decoder instead. The hardest part by far of this project are the Rotors. The dictate the input and output of our strings and rotate each time giving us different outputs each time despite inputting the same string.
   - Something to realize is that each rotor has a default starting string which you can essentilaly hardcode in your code along with a similar set of reflectors.
 
+![Enigma](https://github.com/jshen04/Enigma/blob/main/imgs/enigma.jpg)
 ## How do the Rotors work
 Lets say you have the following as your rotor defaults:
 
@@ -34,6 +35,8 @@ Get an output of T and then input T back through the rotors to get back the fina
 
 ## Plugboard
 The plugboard is a simple 1 to 1 mapping of letters. For example, if you plug A and Z together, it means that every instance of A was replaced with Z. For example if A was linked to Z and we plugged in ABC into our enigma machine it would return NHR. This would be the exact same output if we plugged in ZBC without the plugboard link.
+
+![Plugboard](https://github.com/jshen04/Enigma/blob/main/imgs/plugboard.jpg)
 
 ## Ring Setting
 Ring setting changes the internal wiring of the enigma rotors. The default ring setting is 0 which means nothing is changed and goes up to 25. Each number represents a letter of the alphabet with A being represented by 0 and Z being represented 25. Lets say we had a ring setting of 1, which is the first ring setting that changes something and we are using the rotor string ```DMTWSILRUYQNKFEJCAZBPGXOHV```. With a ring setting of B or 1, we have to shift up all the letters in the string by the ring setting. So if the ring setting is 1, every letter in the rotor string goes up by one. It means B would go to C, C would go to D, etc. So a string ```ekmflgdqvzntowyhxuspaibrcj``` would go to ```flngmherwaoupxziyvtqbjcsdk```. Each time we shift over the letters of the alphabet, we would then have to rotate our rotor over that many times. In this case we would have to rotate over once since our ring stetting is B and we shifted the letters once. So in our example this would mean that B becomes C and then is shifted over one spot. Essentially each ring setting is shifting the wiring by one and then rotating it. If the ring setting is 12 then we do it 12 times.
