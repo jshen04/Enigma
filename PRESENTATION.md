@@ -38,6 +38,8 @@ The plugboard is a simple 1 to 1 mapping of letters. For example, if you plug A 
 ## Ring Setting
 Ring setting changes the internal wiring of the enigma rotors. The default ring setting is 0 which means nothing is changed and goes up to 25. Each number represents a letter of the alphabet with A being represented by 0 and Z being represented 25. Lets say we had a ring setting of 1, which is the first ring setting that changes something and we are using the rotor string ```DMTWSILRUYQNKFEJCAZBPGXOHV```. With a ring setting of B or 1, we have to shift up all the letters in the string by the ring setting. So if the ring setting is 1, every letter in the rotor string goes up by one. It means B would go to C, C would go to D, etc. So a string ```ekmflgdqvzntowyhxuspaibrcj``` would go to ```flngmherwaoupxziyvtqbjcsdk```. Each time we shift over the letters of the alphabet, we would then have to rotate our rotor over that many times. In this case we would have to rotate over once since our ring stetting is B and we shifted the letters once. So in our example this would mean that B becomes C and then is shifted over one spot. Essentially each ring setting is shifting the wiring by one and then rotating it. If the ring setting is 12 then we do it 12 times.
 
+## Positioning
+The default configuration for the enigma machine rotors is A,A,A. Each subsequent increase in the letters would mean a corresponding rotating on the wiring part. This means that A,A,B is the same thing as rotating the rotor once. These letters give a way of keeping track of the number of times the rotor has rotated and also help with increased randomization and were the letters that were given to the Germans when encrypting their code.
 
 
 
