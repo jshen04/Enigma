@@ -47,6 +47,10 @@ Ring setting changes the internal wiring of the enigma rotors. The default ring 
 ## Positioning
 The default configuration for the enigma machine rotors is A,A,A. Each subsequent increase in the letters would mean a corresponding rotating on the wiring part. This means that A,A,B is the same thing as rotating the rotor once. These letters give a way of keeping track of the number of times the rotor has rotated and also help with increased randomization and were the letters that were given to the Germans when encrypting their code.
 
+## Cracking the Enigma Machine
+Cracking the enigma machine is a monumental task and very complex as you can tell by all the parts of the Enigma Machine. However, one viable way is through Artificial Intelligence and you can find out more information about it [here](https://github.com/greydanus/crypto-rnn). One of our group members, Jeremy Shen is a top 39 robotics engineer and top 3 in robot coordination in the world. If you have any questions please ask them.
+
+# THANK YOU!
 
 
 
