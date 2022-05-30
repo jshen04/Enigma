@@ -84,3 +84,7 @@ Created homework
 
 [Enigma Machine basic info](https://www.nms.ac.uk/explore-our-collections/stories/science-and-technology/enigma-encoding-machine/)
 
+[Homework Resource 1](https://www.ciphermachinesandcryptology.com/en/enigmaproc.htm)
+
+[Homework Resource 2](http://media.wix.com/ugd//abb462_5fab600b003e2aa78521d95e5c8dd5b9.pdf)
+
