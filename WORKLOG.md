@@ -71,6 +71,9 @@ Added in Resources and updates to presentation and ReadMe which are now both alm
 Jeremy 5/29 16:26
 Created homework
 
+Jeremy 5/30 21:44
+Improved presentation, created makefile
+
 ### Resources Used
 [Wikipedia Page for Rotors](https://en.wikipedia.org/wiki/Enigma_rotor_details)
 
