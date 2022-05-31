@@ -41,7 +41,8 @@ Get an output of J and then input J back through the rotors to get back the fina
 ## Plugboard
 The plugboard is a simple 1-to-1 mapping of letters. For example, if you plug A and Z together, it means that every instance of A was replaced with Z. For example if A was linked to Z and we plugged in ABC into our Enigma machine it would return NHR. This would be the same output if we plugged in ZBC without the plugboard link.
 
-![Plugboard](https://github.com/jshen04/Enigma/blob/main/imgs/plugboard.jpg)
+![Plugboard](https://github.com/jshen04/Enigma/blob/main/imgs/plugboard1.png)
+![Plugboard](https://github.com/jshen04/Enigma/blob/main/imgs/plugboard2.png)
 
 ## Ring Setting
 Ring setting changes the internal wiring of the Enigma rotors. The default ring setting is 0 which means nothing is changed and goes up to 25. Each number represents a letter of the alphabet with A being represented by 0 and Z being represented by 25. Let's say we had a ring setting of 1, which is the first ring setting that changes something and we are using the rotor string ```DMTWSILRUYQNKFEJCAZBPGXOHV```. With a ring setting of B or 1, we have to shift up all the letters in the string by the ring setting. So if the ring setting is 1, every letter in the rotor string goes up by one. It means B would go to C, C would go to D, etc. So a string ```ekmflgdqvzntowyhxuspaibrcj``` would go to ```flngmherwaoupxziyvtqbjcsdk```. Each time we shift over the letters of the alphabet, we would then have to rotate our rotor over that many times. In this case, we would have to rotate over once since our ring setting is B and we shifted the letters once. So in our example, this would mean that B becomes C and then is shifted over one spot. Essentially each ring setting is shifting the wiring by one and then rotating it. If the ring setting is 12 then we do it 12 times.
