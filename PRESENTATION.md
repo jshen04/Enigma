@@ -18,23 +18,25 @@
 ## How do the Rotors work
 Let's say you have the following as your rotor defaults:
 
-| Rotor #      | ABCDEFGHIJKLMNOPQRSTUVWXYZ  |
+| Rotor #      | ABCDEFGHIJKLMNOPQRSTUVWXYZA  |
 | ----------- | ----------- |
-| IC      | DMTWSILRUYQNKFEJCAZBPGXOHV       |
-| IIC   | HQZGPJTMOBLNCIFDYAWVEUSRKX        |
-| IIIC  |  UQNTLSZFMREHDPXKIBVYGJCWOA | 
+| IC      | EKMFLGDQVZNTOWYHXUSPAIBRCJ       |
+| IIC   | AJDKSIRUXBLHWTMCQGZNPYFVOE        |
+| IIIC  |  BDFHJLCPRTXVZNYEIWGAKMUSQO | 
 
 
-And you select the letter A, you see that A goes on to D looking at the first rotor, then you plug D into the second rotor which returns G, and then you plug G into the third rotor to get Z. So that is how the tracing of the rotors works. The rotors themselves have a default starting string which then shifts over by one after each tracing. So as stated before after we plugged in A to get Z, the first rotor IC would then go from ```DMTWSILRUYQNKFEJCAZBPGXOHV``` over to ```MTWSILRUYQNKFEJCAZBPGXOHVD```. After this happens 26 times to the first rotor, the second rotor would then shift over by 1 as well, and after the second rotor shifts over 26 times the third rotor shifts over by 1 as well. This gives us a total of 26^3 total characters before we repeat a word.
+And you select the letter A, you see that A goes on to E looking at the first rotor, but that would be your first mistake. The rotors rotate right before your first input goes through so in this case, A would go to K. The letters go to a one to one correspondence with rotors with the first position of the input mapping to the first position of the rotor. Rotating is essentially moving the letter forward and putting the first letter to the back so you go from ```EKMFLGDQVZNTOWYHXUSPAIBRCJ``` over to ```KMFLGDQVZNTOWYHXUSPAIBRCJE```. After this happens 26 times to the first rotor, the second rotor would then shift over by 1 as well, and after the second rotor shifts over 26 times the third rotor shifts over by 1 as well. This gives us a total of 26^3 total characters before we repeat a word.
 
-![Rotors](https://github.com/jshen04/Enigma/blob/main/imgs/wheels.png)
+ After this first rotor swap, you then have to rotate the top part of the alphabet as well to compensate for the first rotor rotate. Then you plug K into the second rotor, and realize that K now has the position of 10 because of the rotation moving it forward which returns B. However, the rotors are no longer rotated, so if you plug in B it stays a B in the second position so for the third rotor you would get D. So that is how the tracing of the rotors works.
+
+![Rotors](https://github.com/jshen04/Enigma/blob/main/imgs/rotor1.png)
 ### Reflectors 
-Reflectors are essentially rotors that have an extra step of reflecting the output through the rotors. To put this in better terms, after we get from A to Z after passing through the three rotors at the beginning, You would then input Z into the reflector. 
+Reflectors are essentially the end rotors that have the job of reflecting what it is given through the rotors again. To put this in better terms, after we get from A to D after passing through the three rotors at the beginning, D gets passed back into  
 | Rotor #      | ABCDEFGHIJKLMNOPQRSTUVWXYZ  |
 | ----------- | ----------- |
-| Reflector B | YRUHQSLDPXNGOKMIEBFZCWVJAT  |
+| Reflector C | FVPJIAOYEDRZXWGCTKUQSBNMHL  |
 
-Get an output of T and then input T back through the rotors to get back the final output of Q.
+Get an output of J and then input J back through the rotors to get back the final output of T. This time you go from the rotor to the Alphabet, so J in rotor 3 maps to E in the alphabet.E in rotor 2 maps to Z in the alphabet but A in the rotated Alphabet and A in rotor 1 maps to U in the alphabet, but with the shift this maps to T which is our output.
 
 ## Plugboard
 The plugboard is a simple 1-to-1 mapping of letters. For example, if you plug A and Z together, it means that every instance of A was replaced with Z. For example if A was linked to Z and we plugged in ABC into our Enigma machine it would return NHR. This would be the same output if we plugged in ZBC without the plugboard link.
@@ -48,7 +50,7 @@ Ring setting changes the internal wiring of the Enigma rotors. The default ring 
 The default configuration for the enigma machine rotors is A, A, A. Each subsequent increase in the letters would mean a corresponding rotating on the wiring part. This means that A, A, B is the same thing as rotating the rotor once. These letters give a way of keeping track of the number of times the rotor has rotated and also help with increased randomization and were the letters that were given to the Germans when encrypting their code.
 
 ## Cracking the Enigma Machine
-Cracking the enigma machine is a monumental task and very complex as you can tell by all the parts of the Enigma Machine. However, one viable way is through Artificial Intelligence and you can find out more information about it [here](https://github.com/greydanus/crypto-rnn). One of our group members, Jeremy Shen is a top 39 robotics engineer and top 3 in robot coordination in the world. If you have any questions please ask them.
+Cracking the enigma machine is a monumental task and very complex as you can tell by all the parts of the Enigma Machine. However, one viable way is through Artificial Intelligence and you can find out more information about it [here](https://github.com/greydanus/crypto-rnn). Of course we would also have to talk about one of the most important innovations in cracking enigma, the turing machine. Invented by Alan Turing, he developed a complex code-breaking technique he named ‘Turingery’ that uses logic to decipher it. One of our group members, Jeremy Shen is a top 3 most outstanding robot coordination researcher in the world (this year). If you have any questions please ask him.
 
 # THANK YOU!
 
