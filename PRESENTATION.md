@@ -18,7 +18,7 @@
 ## How do the Rotors work
 Let's say you have the following as your rotor defaults:
 
-| Rotor #      | ABCDEFGHIJKLMNOPQRSTUVWXYZA  |
+| Rotor #      | ABCDEFGHIJKLMNOPQRSTUVWXYZ  |
 | ----------- | ----------- |
 | IC      | EKMFLGDQVZNTOWYHXUSPAIBRCJ       |
 | IIC   | AJDKSIRUXBLHWTMCQGZNPYFVOE        |
