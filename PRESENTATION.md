@@ -1,7 +1,7 @@
 # The Enigma Machine by Team J'lengima (Jeremy Shen and Justin Zou)
 
 ## What we did
-- Essentially we made an encoder and decoder with the enigma machine.
+- Essentially we made an encoder and decoder simulating the enigma machine.
 - Our machine will allow you to encode and decode where you can set rotors, ring settings, plugboard, and reflectors
 
 ## What is the Enigma Machine and some history
@@ -11,8 +11,8 @@
 ![Arthur Scherbius](https://github.com/jshen04/Enigma/blob/main/imgs/arthur.jpg)
 
 # So how did we make this encoder
-- The enigma machine is made up of many moving and complicated parts that would have made it nearly impossible to crack it so we made an encoder and decoder instead. The hardest part by far of this project is the Rotors. They dictate the input and output of our strings and rotate each time giving us different outputs each time despite inputting the same string.
-  - Something to realize is that each rotor has a default starting string which you can essentially hardcode in your code along with a similar set of reflectors.
+- The enigma machine is made up of many moving and complicated parts that would have made it nearly impossible to crack it so we made an encoder and decoder instead. The hardest part by far of this project is the Rotors. They dictate the input and output of our strings and rotate each time which gives us different outputs each time despite inputting the same string.
+  - Something to realize is that each rotor has a default starting string which you can essentially hardcode in your code to make it easier when coding this project.
 
 ![Enigma](https://github.com/jshen04/Enigma/blob/main/imgs/enigma.jpg)
 ## How do the Rotors work
@@ -46,6 +46,8 @@ The plugboard is a simple 1-to-1 mapping of letters. For example, if you plug A 
 ## Ring Setting
 Ring setting changes the internal wiring of the Enigma rotors. The default ring setting is 0 which means nothing is changed and goes up to 25. Each number represents a letter of the alphabet with A being represented by 0 and Z being represented by 25. Let's say we had a ring setting of 1, which is the first ring setting that changes something and we are using the rotor string ```DMTWSILRUYQNKFEJCAZBPGXOHV```. With a ring setting of B or 1, we have to shift up all the letters in the string by the ring setting. So if the ring setting is 1, every letter in the rotor string goes up by one. It means B would go to C, C would go to D, etc. So a string ```ekmflgdqvzntowyhxuspaibrcj``` would go to ```flngmherwaoupxziyvtqbjcsdk```. Each time we shift over the letters of the alphabet, we would then have to rotate our rotor over that many times. In this case, we would have to rotate over once since our ring setting is B and we shifted the letters once. So in our example, this would mean that B becomes C and then is shifted over one spot. Essentially each ring setting is shifting the wiring by one and then rotating it. If the ring setting is 12 then we do it 12 times.
 
+![Rotors](https://github.com/jshen04/Enigma/blob/main/imgs/rotor2.png)
+![Rotors](https://github.com/jshen04/Enigma/blob/main/imgs/rotor3.png)
 ## Positioning
 The default configuration for the enigma machine rotors is A, A, A. Each subsequent increase in the letters would mean a corresponding rotating on the wiring part. This means that A, A, B is the same thing as rotating the rotor once. These letters give a way of keeping track of the number of times the rotor has rotated and also help with increased randomization and were the letters that were given to the Germans when encrypting their code.
 
