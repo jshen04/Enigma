@@ -72,8 +72,10 @@ Jeremy 5/29 16:26
 Created homework
 
 Jeremy 5/30 21:44
-Improved presentation, created makefile
+Improved README, created makefile
 
+Justin 5/30 23:08
+Finish up the Presentation and resources
 ### Resources Used
 [Wikipedia Page for Rotors](https://en.wikipedia.org/wiki/Enigma_rotor_details)
 
@@ -91,3 +93,4 @@ Improved presentation, created makefile
 
 [Homework Resource 2](http://media.wix.com/ugd//abb462_5fab600b003e2aa78521d95e5c8dd5b9.pdf)
 
+[Turing Machine](https://www.iwm.org.uk/history/how-alan-turing-cracked-the-enigma-code)
