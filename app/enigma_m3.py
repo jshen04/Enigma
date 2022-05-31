@@ -4,18 +4,6 @@ import sys
 from plug import Plug
 from rotor import Rotor
 
-# p = Plug('', '')
-# r1 = Rotor('A', 'A', 'EKMFLGDQVZNTOWYHXUSPAIBRCJ', 'Q')
-# r2 = Rotor('A', 'A', 'AJDKSIRUXBLHWTMCQGZNPYFVOE', 'E')
-# r3 = Rotor('A', 'A', 'BDFHJLCPRTXVZNYEIWGAKMUSQO', 'V')
-# reflector = Rotor('A', 'A', 'FVPJIAOYEDRZXWGCTKUQSBNMHL', 'A')
-# e1 = Enigma(reflector, [r3, r2, r1], p)
-# print(r1.rotor_wiring, r1.ring_position)
-# print(r2.rotor_wiring, r2.ring_position)
-# print(r3.rotor_wiring, r3.ring_position)
-#
-# print(e1.forward("ABC"))
-
 class EnimgaM3:
     def __init__(self, reflector, rotor1, rotor2, rotor3, plugs):
         self.rotor1 = rotor1
@@ -79,16 +67,16 @@ reflectorC = 'FVPJIAOYEDRZXWGCTKUQSBNMHL'
 reflectors = [reflectorA, reflectorB, reflectorC]
 
 rotor1 = rotors[int(sys.argv[1]) - 1]
-rs1 = sys.argv[2]
-pos1 = sys.argv[3]
+rs1 = sys.argv[2].upper()
+pos1 = sys.argv[3].upper()
 
 rotor2 = rotors[int(sys.argv[4]) - 1]
-rs2 = sys.argv[5]
-pos2 = sys.argv[6]
+rs2 = sys.argv[5].upper()
+pos2 = sys.argv[6].upper()
 
 rotor3 = rotors[int(sys.argv[7]) - 1]
-rs3 = sys.argv[8]
-pos3 = sys.argv[9]
+rs3 = sys.argv[8].upper()
+pos3 = sys.argv[9].upper()
 
 reflector = reflectors[ord(sys.argv[10].upper()) - 65]
 
